@@ -1,6 +1,0 @@
-AuthType Basic
-AuthUserFile "/etc/apache2/userauth"
-AuthName "Restricted"
-<LIMIT GET POST>
-	require valid-user
-</LIMIT>

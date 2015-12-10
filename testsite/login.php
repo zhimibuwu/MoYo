@@ -13,7 +13,7 @@ $password = (isset($_POST['password'])) ? $_POST['password'] : '';
 $redirect = (isset($_REQUEST['redirect'])) ? $_REQUEST['redirect'] : 'main.php';
 
 if (isset($_POST['submit'])) {
-    $query = 'SELECT admin_level FROM site_user WHERE ' .
+    $query = 'SELECT admin_level FROM MoYo_site_user WHERE ' .
          'username = "' . mysql_real_escape_string($username, $db) . '" AND ' .
          'password = PASSWORD("' . mysql_real_escape_string($password, $db) . '")';
     $result = mysql_query($query, $db) or die(mysql_error($db));
